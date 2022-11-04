@@ -3,7 +3,10 @@ import Review from './Review'
 import Reviewforms from './Reviewforms'
 
 
-function Movie({Title, year, time, rating, image, }) {
+
+function Movie({Title, year, time, rating, image, review}) {
+
+
   return (
 
          <div className='card bg-dark text-light'>
@@ -25,7 +28,7 @@ function Movie({Title, year, time, rating, image, }) {
    
                 </div>
                 <div className='col-md'>
-                    <Review />
+                    <Review reviews={review}/>
                 </div>
                 <div className='col-sm'>
                     <Reviewforms />

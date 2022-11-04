@@ -31,7 +31,7 @@ import React from 'react'
 function NavBar() {
   return (
     <div>
-        <nav className='container-fluid text-dark navbar bg-danger m-0 me-auto'>
+        <nav className='container-fluid text-dark navbar bg-danger m-0 mb-1 me-auto'>
             <nav>
                 <Navbar>
                     <a className='navbar-brand ms-3 me-1'>Movie Reviews</a>
@@ -40,7 +40,7 @@ function NavBar() {
                             <DropdownToggle nav caret>
                                 Movie Genre
                             </DropdownToggle>
-                            <DropdownMenu right>
+                            <DropdownMenu end>
                                 <DropdownItem>Action</DropdownItem>
                                 <DropdownItem>Comedy</DropdownItem>
                                 <DropdownItem></DropdownItem>
