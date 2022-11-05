@@ -19,19 +19,21 @@ function StarRating() {
                         name='rating' 
                         value={ratingValue} 
                         onClick={() => setRating(ratingValue)}
+                       
 
                     />
                     <FaStar
+                        
                         className='star' 
                         color={ratingValue <= (hover || rating)  ? '#ffc107' : '#e4e5e9'}
-                        size='25' 
+                        size='25'
                         onMouseEnter={() => setHover(ratingValue)}
                         onMouseLeave={() => setHover(null)}
                     />
                 </label>
             )
         })}
-        
+        <span className='mx-2 btn btn-danger' id='star'>{rating}</span>
     </div>
   )
 }
